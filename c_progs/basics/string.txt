@@ -1,0 +1,113 @@
+#include<stdio.h>
+void main()
+{
+    char a[20];
+    scanf("%s",a);
+    int count=0;
+    int i;
+    for(i=0;a[i]!='\0';i++)
+    {
+       count++;
+    }
+    for(i=0;a[i]!='\0';i++)
+    {
+        if(a[i]>='a' && a[i]<='z')
+        a[i]-=32;
+        printf("%c",a[i]);
+    }
+}
+
+LOWER TO UPPER
+
+
+#include<stdio.h>
+void main()
+{
+    char a[20];
+    scanf("%s",a);
+    int count=0;
+    int i;
+    for(i=0;a[i]!='\0';i++)
+    {
+       count++;
+    }
+    for(i=0;a[i]!='\0';i++)
+    {
+        if(a[i]>='A' && a[i]<='Z')
+        a[i]+=32;
+        printf("%c",a[i]);
+    }
+}
+
+UPPER TO LOWER
+
+#include<stdio.h>
+void main()
+{
+    char a[20];
+    scanf("%s",a);
+    int count=0;
+    int i;
+    for(i=0;a[i]!='\0';i++)
+    {
+       count++;
+    }
+    for(i=count;i>=0;i--)
+    {
+        printf("%c",a[i]);
+    }
+}
+
+REVERSE
+
+#include<stdio.h>
+void main()
+{
+    char a[20];
+    scanf("%[^\n]%*c",a);
+    int count=0;
+    int i;
+    for(i=0;a[i]!='\0';i++)
+    {
+       count++;
+    }
+    printf("%d",count);
+}
+
+COUNT WITH SPACE
+
+#include<stdio.h>
+void main()
+{
+    char a[20];
+    scanf("%s",a);
+    int count=0;
+    int i;
+    for(i=0;a[i]!='\0';i++)
+    {
+       count++;
+    }
+    printf("%d",count);
+}
+
+COUNT
+
+#include<stdio.h>
+void main()
+{
+    char a[20];
+    scanf("%[^\n]%*c",a);
+    int count=1;
+    int i;
+    for(i=0;a[i]!='\0';i++)
+    {
+        if(a[i] == ' ')
+        {
+            count++;
+        }
+    }
+    printf("%d",count);
+}
+
+count the words
+
