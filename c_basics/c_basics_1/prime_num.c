@@ -1,0 +1,32 @@
+#include<stdio.h>
+void main()
+{
+    int a,count=0,i,j,arr[a],k,sum=0;
+    scanf("%d",&a);
+    for(i=2;i<=a;i++)
+    {
+        count=1;
+        for(j=2;j<=i/2;j++)
+        {
+            if(i%j==0)
+            {
+                count=0;
+                break;
+            }
+        }
+        if(count==1)
+        {
+            arr[k]=i;
+            k++;
+        }
+    }
+        for(i=0;i<k;i++)
+        {
+            sum=sum+arr[i];
+            if(sum>a)
+            {
+                break;
+            }
+        }
+    printf(sum);
+}
